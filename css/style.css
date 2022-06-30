@@ -129,7 +129,7 @@ h5 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-}
+} 
 
 @media screen and (max-width: 778px) {
 
