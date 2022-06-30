@@ -1,0 +1,363 @@
+/* 
+    Nmae: Jamal Omar AlDirawi
+    Email: jamalo.dirawi@gmail.com
+*/
+
+/* Global Code CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --container-width-lg: 80%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --sheet-width-xl: 1140px;
+  --sheet-width-lg: 940px;
+  --sheet-width-md: 720px;
+  --sheet-width-sm: 540px;
+  --sheet-width-xs: 340px;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+/* End Global Code CSS */
+
+/* ----------------------  Header Section  ---------------------- */
+
+.header_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.header_image img {
+  max-width: 100%;
+}
+
+.header_text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  display: grid;
+}
+
+.header_text h2 {
+  font-size: 40px;
+}
+
+.header_text p {
+  place-items: center;
+  color: #111;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 20px 90px;
+  line-height: 1.7;
+}
+
+.header_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15rem;
+  background-color: #526365;
+  padding: 20px 40px;
+  color: #fff;
+  /* margin-bottom: 40px; */
+}
+
+.header_boxes .box i {
+  padding-bottom: 10px;
+}
+
+.header_boxes .box h3 {
+  padding-bottom: 10px;
+}
+
+.header_boxes .box p {
+  line-height: 1.5;
+}
+
+.header_boxes .box a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1080px) {
+  .header_boxes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+
+  .header_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .header_boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 778px) {
+
+  .header_boxes {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .header_text h2 {
+    font-size: 30px;
+  }
+  
+  .header_text p {
+    place-items: center;
+    color: #111;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px 20px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 567px) {
+}
+
+/* ----------------------  Navbar Section  ---------------------- */
+
+nav {
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+nav .icon {
+  font-size: 35px;
+  font-weight: 800;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav ol {
+  display: flex;
+  list-style-type: none;
+  margin: auto 0;
+}
+
+nav ol li {
+  margin: 0 2px;
+}
+
+nav ol li a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  margin: 0 2px;
+}
+
+nav ol li:hover a {
+  background-color: #526365;
+  color: #fff;
+}
+
+/* bar */
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+nav .bar span {
+  position: absolute;
+  color: #526365;
+  font-size: 35px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ----------------------  Footer Section  ---------------------- */
+
+footer {
+  background-color: #333;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+}
+
+.footer_logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.footer_socilas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer_socilas a {
+  background-color: #0151df;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.footer_socilas a:hover {
+  background-color: transparent;
+  color: #0151df;
+  border: 1px solid #0151df;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer_copyright {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* =================== Media Navbar Sectionn ===================  */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    padding: 15px 30px;
+    text-align: left;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav ol li {
+    text-align: center;
+    transition: 0.3s 0.1s all;
+    opacity: 0;
+  }
+  nav ol li a {
+    color: #000;
+    font-size: 28px;
+    padding: 25px;
+    display: block;
+  }
+  nav ol li:nth-child(1) {
+    transform: translateX(-150px);
+  }
+  nav ol li:nth-child(2) {
+    transform: translateX(-200px);
+  }
+  nav ol li:nth-child(3) {
+    transform: translateX(-250px);
+  }
+  nav ol li:nth-child(4) {
+    transform: translateX(-300px);
+  }
+  nav ol li:nth-child(5) {
+    transform: translateX(-350px);
+  }
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+  }
+  nav .bar #times {
+    display: none;
+  }
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+  #check:checked ~ nav ol {
+    visibility: visible;
+    height: 465px;
+  }
+  #check:checked ~ nav ol li:nth-child(1),
+  #check:checked ~ nav ol li:nth-child(2),
+  #check:checked ~ nav ol li:nth-child(3),
+  #check:checked ~ nav ol li:nth-child(4),
+  #check:checked ~ nav ol li:nth-child(5) {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* =================== Media Queries =================== */
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 567px) {
+}
